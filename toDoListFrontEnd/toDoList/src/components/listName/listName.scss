@@ -1,0 +1,55 @@
+.ListNameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+.ListName {
+
+    color:white;
+    background: transparent;
+    border: 0px;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+
+.title {
+
+    font-size: 2.5em;
+    font-weight: 800;
+
+}
+
+.desc {
+
+    font-size: 1.1em;
+    width: 500px;
+}
+
+
+.divider {
+        /* Divider */
+
+    position: static;
+    width: 500px;
+    height: 1px;
+    left: 64px;
+    top: 199px;
+
+    background: #29292F;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
