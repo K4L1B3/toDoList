@@ -1,10 +1,5 @@
 import "../listName/listName.scss";
 
-
-type ListName = {
-    onInput:String;
-}
-
 export function ListName (){
    
     return (
