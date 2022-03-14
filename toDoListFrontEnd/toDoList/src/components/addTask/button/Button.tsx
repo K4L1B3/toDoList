@@ -1,4 +1,10 @@
+import { Task } from "../../task/Task"
+
 export function Button(){
     return ( 
-        <input type="button" value="+" id="buttonId" className="addTaskStyleButton"/>
-    )}
+        <button type="submit" id="buttonId" className="addTaskStyleButton">+</button>
+    )
+
+
+
+}

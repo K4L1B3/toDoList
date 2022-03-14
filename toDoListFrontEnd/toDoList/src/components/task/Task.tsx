@@ -2,12 +2,16 @@
 import "../task/task.scss"
 import icon from "../../../public/taskComponent/whiteEditor.svg";
 
-export function Task(){
+type Taskprops = {
+    title: string
+}
+
+export function Task({title}:Taskprops){
     return (
         <div className="taskContainer">
             <div className="taskBoxes">
                 <input id="teste1" type="checkbox" className="chekClass"/>
-                <label htmlFor="teste1"> Testando checkbox</label>
+                <label htmlFor="teste1"> {title} </label>
             </div>
             <div className="taskBoxesIcon">
                 <button  className="icon"> <img src={icon} alt="editar"/></button>  
