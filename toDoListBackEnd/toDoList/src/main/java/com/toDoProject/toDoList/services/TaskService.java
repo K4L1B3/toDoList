@@ -1,6 +1,8 @@
 package com.toDoProject.toDoList.services;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalInt;
 
 import com.toDoProject.toDoList.models.Task;
 import com.toDoProject.toDoList.repositories.TaskRepository;
@@ -50,12 +52,21 @@ public class TaskService {
         return flag;
     }
 
+
+    
     public List<Task> findAll() {
         return taskRepository.findAll();
     }
 
+    public Object save(Task task) {
+        return taskRepository.save(task);
+    }
 
+    public Optional<Task> findById(Long id) {
+        return taskRepository.findById(id);
+    }
 
-
-
+    public void delete(Task task) {
+        taskRepository.delete(task);
+    }
 }
